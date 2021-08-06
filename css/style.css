@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Kumbh Sans", sans-serif;
+  background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background: linear-gradient(#af67e9, #6565e7);
+  background-repeat: no-repeat;
+  padding-top: 11em;
+  position: relative;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 1.5rem;
+  -webkit-box-shadow: 0px 15px 20px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 15px 20px 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 5em;
+}
+
+.container .box {
+  display: none;
+}
+
+.container .main-container {
+  padding-top: 8.5em;
+  position: relative;
+}
+
+.container .main-container .illustration {
+  position: absolute;
+  top: -4%;
+  left: 46%;
+  -webkit-transform: translate(-50%, -46%);
+          transform: translate(-50%, -46%);
+}
+
+.container .main-container .pattern {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.container .main-container .content {
+  position: relative;
+  z-index: 9;
+}
+
+.container .main-container .content h1 {
+  color: #1d1e35;
+  text-align: center;
+  margin-bottom: 0.3em;
+}
+
+.container .main-container .content ul {
+  padding: 1.7em;
+}
+
+.container .main-container .content ul li {
+  margin-bottom: 1.5em;
+  border-bottom: 1px solid #e7e7e9;
+  padding-bottom: 1em;
+  cursor: pointer;
+}
+
+.container .main-container .content ul li .question-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .main-container .content ul li .question-container .question {
+  font-size: 0.89rem;
+  color: #4a4b5e;
+}
+
+.container .main-container .content ul li .question-container .question:active {
+  color: #f47c57;
+}
+
+.container .main-container .content ul li .question-container .question.question-font {
+  font-weight: bold;
+  color: #1d1e35;
+}
+
+.container .main-container .content ul li .question-container .arrow.rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.container .main-container .content ul li .answer {
+  display: none;
+  font-size: 0.75rem;
+  color: #787887;
+  line-height: 1.5;
+}
+
+.container .main-container .content ul li .answer.answer-active {
+  display: block;
+  padding-top: 1em;
+}
+
+.attribution {
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 3em;
+}
+
+.attribution a {
+  color: #f47c57;
+}
+
+@media (min-width: 968px) {
+  .container {
+    position: relative;
+  }
+  .container .box {
+    display: block;
+    position: absolute;
+    top: 41%;
+    left: -11%;
+    -webkit-transform: translateX(9%);
+            transform: translateX(9%);
+    z-index: 2;
+  }
+  .container .main-container {
+    overflow: hidden;
+    padding: 5em 0;
+  }
+  .container .main-container .illustration {
+    top: 50%;
+    left: -15%;
+    -webkit-transform: translate(15%, -50%);
+            transform: translate(15%, -50%);
+    z-index: 1;
+  }
+  .container .main-container .pattern {
+    top: -57%;
+    left: -8%;
+  }
+  .container .main-container .content {
+    width: 36%;
+    margin-left: 55%;
+  }
+  .container .main-container .content h1 {
+    text-align: left;
+    margin-bottom: 1.5em;
+    font-size: 2.2rem;
+  }
+  .container .main-container .content ul {
+    padding: 0;
+  }
+  .container .main-container .content ul li:last-child {
+    margin-bottom: 0;
+  }
+  .container .main-container .content ul li .question-container .question {
+    font-size: 0.91rem;
+  }
+  .container .main-container .content ul li .answer {
+    font-size: 0.77rem;
+  }
+  .attribution {
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
